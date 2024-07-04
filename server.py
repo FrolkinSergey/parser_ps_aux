@@ -70,20 +70,5 @@ def echo_server(host='192.168.0.104', port=15000):
                 client_socket.close()
 
 
-                # response_headers = [
-                #     'Request Method: {}'.format(method),
-                #     'Request Source: ({''}, {})'.format(ip, port),
-                #     'Response Status: {} {}'.format(s_code, s_msg),
-                # ]
-                #
-                # client_socket.send(
-                #     bytes('HTTP/1.1 {} {}\r\n'.format(s_code, s_msg),
-                #           'utf-8'))
-                # client_socket.send(b'Content-Type: text/plain\r\n')
-                # client_socket.send(b'\r\n')
-                # client_socket.send(bytes('\r\n'.join(response_headers), 'utf-8'))
-                # client_socket.close()
-
-
 if __name__ == '__main__':
     echo_server()
